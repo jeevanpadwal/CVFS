@@ -610,7 +610,7 @@ int main()
         fflush(stdin);
         strcpy(str,"");
 
-        printf("\nMarvellous VFS : >");
+        printf("\nG1's VFS : >");
 
         fgets(str,80,stdin); //scanf("%[^'\n']s",str);
 
