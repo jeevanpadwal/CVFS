@@ -1,4 +1,4 @@
-# Virtual File System (VFS)
+# G1's Virtual File System (VFS)
 
 A customized Virtual File System that emulates Unix/Linux file system functionalities. This project implements a file subsystem that provides various file operations like create, open, close, read, write, etc.
 
@@ -13,7 +13,7 @@ A customized Virtual File System that emulates Unix/Linux file system functional
 
 ## Overview
 
-The Virtual File System (VFS) is an in-memory file system that provides a layer of abstraction over the actual file system. It implements core file operations and maintains file metadata similar to the UNIX file system.
+The G1's Virtual File System (VFS) is an in-memory file system that provides a layer of abstraction over the actual file system. It implements core file operations and maintains file metadata similar to the UNIX file system.
 
 ## System Architecture
 
@@ -72,26 +72,26 @@ g++ VirtualFileSystem.cpp -o vfs
 
 ### 1. Create a new file
 ```bash
-Marvellous VFS :> create Demo.txt 3
+G1's VFS :> create Demo.txt 3
 File is successfully created with file descriptor: 0
 ```
 
 ### 2. Write to file
 ```bash
-Marvellous VFS :> write Demo.txt
+G1's VFS :> write Demo.txt
 Enter the data:
 Hello, Virtual File System!
 ```
 
 ### 3. Read from file
 ```bash
-Marvellous VFS :> read Demo.txt 50
+G1's VFS :> read Demo.txt 50
 Hello, Virtual File System!
 ```
 
 ### 4. List all files
 ```bash
-Marvellous VFS :> ls
+G1's VFS :> ls
 File Name        inode number     File size        Link count
 --------------------------------------------------
 Demo.txt         1               23               1
@@ -101,7 +101,7 @@ Test.txt         2               45               1
 
 ### 5. Get file information
 ```bash
-Marvellous VFS :> stat Demo.txt
+G1's VFS :> stat Demo.txt
 Statistical Information about file
 File name: Demo.txt
 Inode Number: 1
@@ -114,7 +114,7 @@ File Permission: Read & Write
 
 ### 6. Delete file
 ```bash
-Marvellous VFS :> rm Demo.txt
+G1's VFS :> rm Demo.txt
 File successfully deleted
 ```
 
